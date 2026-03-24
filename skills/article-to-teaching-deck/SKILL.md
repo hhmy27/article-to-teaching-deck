@@ -15,8 +15,9 @@ Turn a source article into a compact lesson, not a companion summary. The deck m
 4. Rebuild the content as a standalone lesson that a first-time reader can understand without the article.
 5. Build a teaching outline before writing slides.
 6. Generate the deck in `Slidev` markdown unless the user explicitly asks for another format.
-7. Add footer-only source locators for factual slides so the learner can trace each idea back to the article.
-8. End with recap, questions, and transfer prompts.
+7. Start a local preview after generating the deck whenever the user would benefit from opening it directly.
+8. Add footer-only source locators for factual slides so the learner can trace each idea back to the article.
+9. End with recap, questions, and transfer prompts.
 
 Read `references/deck-blueprint.md` before outlining if you need the default teaching flow.
 
@@ -82,6 +83,15 @@ If chart-heavy slides would benefit from stronger visuals and optional companion
 - use `$infographic-creator` when a hand-drawn or infographic-style visual would teach the idea better than a plain chart
 - prefer those skills selectively, not on every slide
 - keep the visual simple and readable; teaching clarity matters more than decoration
+
+After generating a Slidev deck:
+
+- treat deck generation and preview launch as one workflow, not two unrelated tasks
+- if the user wants to see the result, start a local preview and return the localhost URL
+- use `scripts/start_slidev_preview.sh <deck-path> [port]` when it fits the environment
+- if Slidev is not installed yet, install `@slidev/cli` and `@slidev/theme-default` in the working directory before launching, asking for approval when network or sandbox rules require it
+- prefer a predictable port such as `3032`, but fall back to another free port if needed
+- if a preview is already running for that port, return the existing URL instead of starting duplicates
 
 When writing slides:
 
