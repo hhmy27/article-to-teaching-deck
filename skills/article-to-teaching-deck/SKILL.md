@@ -26,6 +26,7 @@ Read `references/deck-blueprint.md` before outlining if you need the default tea
 
 - Open the URL with the available browsing or page-extraction tools. If the page is blocked, ask the user for the article text.
 - Capture the metadata that matters for teaching: title, author, publication date, section headings, and any explicit timeline markers.
+- Inspect whether the article contains original figures, charts, tables, screenshots, or other embedded visuals.
 - Preserve article structure while reading. Section boundaries are useful later for source locators.
 
 ### 2. Build a teachable mental model
@@ -56,6 +57,7 @@ Prefer a deck that can be consumed in 5-12 minutes.
 - Start with orientation: what this article is about, why it matters, and what the learner will be able to do after the deck.
 - Reveal the logic progressively instead of putting the whole summary on one slide.
 - Use interaction deliberately: pause slides, stepwise reveals, mini-checks, and compare-before-answer moments.
+- When the article includes meaningful original figures or tables, give each important one its own slide instead of squeezing it into a text-heavy page.
 - Include a timeline when the article has dates, phases, or turning points.
 - Include a concept map or process slide when the article explains mechanisms.
 - Keep each slide focused on one teaching job.
@@ -98,6 +100,8 @@ When writing slides:
 - use Slidev interaction features such as `v-click`, `v-clicks`, and staged diagrams to create a sense of discovery
 - on the cover or early context slide, include source credibility: author, role, publication, and why the experience matters
 - do not state obvious meta-points such as "you do not need to read the original article" unless the user explicitly wants that wording on-slide
+- if using original article visuals, size them conservatively so the whole image fits on screen without overflow
+- prefer giving an original visual a dedicated page with a short explainer and click-revealed takeaway
 
 When the user asks for accessibility for ADHD or reading difficulty:
 
