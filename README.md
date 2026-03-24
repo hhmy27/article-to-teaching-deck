@@ -12,12 +12,13 @@ The skill is designed for decks that:
 ## Repo layout
 
 ```text
-article-to-teaching-deck/
-  SKILL.md
-  agents/
-    openai.yaml
-  references/
-    deck-blueprint.md
+skills/
+  article-to-teaching-deck/
+    SKILL.md
+    agents/
+      openai.yaml
+    references/
+      deck-blueprint.md
 ```
 
 ## Install into Codex
@@ -27,7 +28,7 @@ If this repo is published at `YOUR_GITHUB_NAME/article-to-teaching-deck`, instal
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo YOUR_GITHUB_NAME/article-to-teaching-deck \
-  --path article-to-teaching-deck
+  --path skills/article-to-teaching-deck
 ```
 
 Then restart Codex.
@@ -47,3 +48,18 @@ If installed, these can improve chart-heavy slides:
 ## Development
 
 Edit the files inside `article-to-teaching-deck/` and commit normally.
+
+
+## npx skills install
+
+This repo is also structured for the `skills` CLI. After publishing to GitHub, users can install it with:
+
+```bash
+npx skills add YOUR_GITHUB_NAME/article-to-teaching-deck --skill article-to-teaching-deck
+```
+
+For Codex global install:
+
+```bash
+npx skills add YOUR_GITHUB_NAME/article-to-teaching-deck --skill article-to-teaching-deck -a codex -g
+```
