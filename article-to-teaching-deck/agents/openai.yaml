@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Teaching Deck"
+  short_description: "Turn article links into teaching-first slide decks"
+  default_prompt: "Use $article-to-teaching-deck to turn this article into an interactive teaching deck with citations to source locations."
