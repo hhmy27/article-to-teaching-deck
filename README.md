@@ -23,11 +23,11 @@ skills/
 
 ## Install into Codex
 
-If this repo is published at `YOUR_GITHUB_NAME/article-to-teaching-deck`, install it with:
+If this repo is published at `hhmy27/article-to-teaching-deck`, install it with:
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo YOUR_GITHUB_NAME/article-to-teaching-deck \
+  --repo hhmy27/article-to-teaching-deck \
   --path skills/article-to-teaching-deck
 ```
 
@@ -55,11 +55,11 @@ Edit the files inside `article-to-teaching-deck/` and commit normally.
 This repo is also structured for the `skills` CLI. After publishing to GitHub, users can install it with:
 
 ```bash
-npx skills add YOUR_GITHUB_NAME/article-to-teaching-deck --skill article-to-teaching-deck
+npx skills add hhmy27/article-to-teaching-deck --skill article-to-teaching-deck
 ```
 
 For Codex global install:
 
 ```bash
-npx skills add YOUR_GITHUB_NAME/article-to-teaching-deck --skill article-to-teaching-deck -a codex -g
+npx skills add hhmy27/article-to-teaching-deck --skill article-to-teaching-deck -a codex -g
 ```
